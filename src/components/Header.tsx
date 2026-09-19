@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, BookOpen, Layers, Activity, Cpu, RotateCcw, ShieldCheck, Compass } from 'lucide-react';
+import { Sparkles, BookOpen, Layers, Activity, Cpu, RotateCcw, ShieldCheck, Compass, Github } from 'lucide-react';
 
 export type ActiveTab =
   | 'modular'
@@ -151,6 +151,17 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <RotateCcw className="w-3.5 h-3.5" />
           </button>
+
+          <a
+            href="https://github.com/Aghora-Abraham-Global-LLC/Finite_Dimensional_Dilaton_Studio"
+            target="_blank"
+            rel="noreferrer"
+            title="View GitHub Repository"
+            className="flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-cyan-300 transition-colors text-[11px] font-medium"
+          >
+            <Github className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Repo</span>
+          </a>
         </div>
       </div>
 

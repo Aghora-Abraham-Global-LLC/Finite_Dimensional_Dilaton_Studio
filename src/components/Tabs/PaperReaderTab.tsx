@@ -102,6 +102,16 @@ export const PaperReaderTab: React.FC = () => {
               <span>License: CC BY 4.0</span>
               <ExternalLink className="w-2.5 h-2.5" />
             </a>
+
+            <a
+              href="https://github.com/Aghora-Abraham-Global-LLC/Finite_Dimensional_Dilaton_Studio"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-400 hover:text-slate-200 flex items-center justify-center gap-1 font-mono text-[11px]"
+            >
+              <span>GitHub Repository</span>
+              <ExternalLink className="w-2.5 h-2.5" />
+            </a>
           </div>
         </div>
       </div>

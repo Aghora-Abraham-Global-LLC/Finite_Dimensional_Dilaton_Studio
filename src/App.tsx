@@ -154,6 +154,15 @@ export const App: React.FC = () => {
               >
                 Zenodo Open Software (CC BY 4.0)
               </a>
+              <span>•</span>
+              <a
+                href="https://github.com/Aghora-Abraham-Global-LLC/Finite_Dimensional_Dilaton_Studio"
+                target="_blank"
+                rel="noreferrer"
+                className="text-slate-300 hover:text-white underline font-mono"
+              >
+                GitHub: Aghora-Abraham-Global-LLC
+              </a>
             </p>
           </div>
 
