@@ -92,6 +92,16 @@ export const PaperReaderTab: React.FC = () => {
               <span>Zenodo DOI: 22831838</span>
               <ExternalLink className="w-3 h-3" />
             </a>
+
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-amber-400/90 hover:text-amber-300 flex items-center justify-center gap-1 text-[11px]"
+            >
+              <span>License: CC BY 4.0</span>
+              <ExternalLink className="w-2.5 h-2.5" />
+            </a>
           </div>
         </div>
       </div>

@@ -134,8 +134,26 @@ export const App: React.FC = () => {
             <div className="text-slate-300 font-semibold">
               Dilaton Studio — Finite-Dimensional Modular Theory Simulation Engine (v4.0.0)
             </div>
-            <p className="text-[11px] text-slate-400 mt-0.5">
-              BhutaDamaraSena R&D Labs • Aghora Abraham Global LLC • Research DOI: 10.5281/zenodo.22831838
+            <p className="text-[11px] text-slate-400 mt-0.5 flex flex-wrap items-center gap-1.5 justify-center md:justify-start">
+              <span>BhutaDamaraSena R&D Labs • Aghora Abraham Global LLC</span>
+              <span>•</span>
+              <a
+                href="https://doi.org/10.5281/zenodo.22831838"
+                target="_blank"
+                rel="noreferrer"
+                className="text-cyan-400 hover:text-cyan-300 underline font-mono"
+              >
+                DOI: 10.5281/zenodo.22831838
+              </a>
+              <span>•</span>
+              <a
+                href="https://creativecommons.org/licenses/by/4.0/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-amber-400 hover:text-amber-300 font-medium"
+              >
+                Zenodo Open Software (CC BY 4.0)
+              </a>
             </p>
           </div>
 

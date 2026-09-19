@@ -1,7 +1,7 @@
 # Dilaton Studio: Finite-Dimensional Modular Theory & Holographic Reconstruction
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22831838.svg)](https://doi.org/10.5281/zenodo.22831838)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3+-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -160,6 +160,9 @@ If you utilize this simulation suite, numerical routines, or mathematical formul
 
 ---
 
-## 📜 License
+## 📜 License & Open Access
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Zenodo Open Research Software License — Creative Commons Attribution 4.0 International (CC BY 4.0)**:
+- Permanent Zenodo Record: [https://doi.org/10.5281/zenodo.22831838](https://doi.org/10.5281/zenodo.22831838)
+- See the full terms in the [LICENSE](LICENSE) file.
+- Anyone is free to share, adapt, and build upon this software and research suite with author attribution to **Ghulam-e-Shah-e-Unmani (AryaArunachalaAnanda), BhutaDamaraSena R&D Labs**.
