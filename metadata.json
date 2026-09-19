@@ -1,0 +1,6 @@
+{
+  "name": "Dilaton Studio - Modular Theory & Holographic Reconstruction",
+  "description": "Interactive numerical simulation engine for finite-dimensional Tomita-Takesaki modular theory, Kubo-Mori-Bogoliubov geometry, paired Alicki detailed balance, and resilient quantum mirror descent for black hole holographic state reconstruction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
