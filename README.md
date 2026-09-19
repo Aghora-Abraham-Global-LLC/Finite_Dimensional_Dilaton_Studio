@@ -90,42 +90,45 @@ This builds static client assets into the `dist/` directory, optimized with mini
 
 ---
 
-## 🌐 Deployment: GitHub + Cloudflare Pages Guide
+## 🌐 How to Make the Site Live
 
-You do **not** have to choose between GitHub or Cloudflare—they are designed to work together in tandem!
+You have two free, production-ready hosting options:
 
-### Architecture
-- **GitHub**: Stores your code repository, revision history, documentation, issues, and enables peer-review citations.
-- **Cloudflare Pages**: Connects directly to your GitHub repository, automatically compiles `npm run build` on every commit, and deploys your application globally onto Cloudflare's ultra-fast Anycast Edge network with zero server maintenance, unlimited free bandwidth, and free SSL.
+### Option A: 100% GitHub Pages (Hosted directly by GitHub — No external services!)
 
-### Step-by-Step Cloudflare Pages Deployment
+The repository includes a pre-configured GitHub Actions deployment workflow (`.github/workflows/deploy.yml`).
 
-1. **Push your code to GitHub**:
+1. **Push this repository to GitHub**:
    ```bash
    git init
    git add .
-   git commit -m "feat: initial release of Dilaton Studio"
+   git commit -m "feat: initial release of Dilaton Studio v4.0.0"
    git branch -M main
    git remote add origin https://github.com/YOUR_USERNAME/dilaton-studio.git
    git push -u origin main
    ```
 
-2. **Log into Cloudflare**:
-   - Visit the [Cloudflare Dashboard](https://dash.cloudflare.com/) and navigate to **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
+2. **Enable GitHub Pages in your repository settings**:
+   - Go to your GitHub repository in your browser.
+   - Click **Settings** (gear icon) > **Pages** (in the left sidebar).
+   - Under **Build and deployment** > **Source**, select:  
+     **GitHub Actions**
+   - That's it! GitHub will automatically trigger the deployment action, compile the app, and host it live at:  
+     `https://YOUR_USERNAME.github.io/dilaton-studio/`
 
-3. **Select your GitHub Repository**:
-   - Choose `YOUR_USERNAME/dilaton-studio`.
+---
 
-4. **Configure Build Settings**:
+### Option B: Cloudflare Pages (Instant Global Edge CDN)
+
+If you prefer Cloudflare Pages:
+
+1. Visit the [Cloudflare Dashboard](https://dash.cloudflare.com/) and navigate to **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
+2. Select your `dilaton-studio` GitHub repository.
+3. Set build configuration:
    - **Framework preset**: `Vite`
    - **Build command**: `npm run build`
    - **Build output directory**: `dist`
-   - **Root directory**: `/`
-   - **Node.js Version**: In Environment Variables, set `NODE_VERSION` to `20` (or `18`).
-
-5. **Deploy**:
-   - Click **Save and Deploy**. In under 60 seconds, your site is live at `https://dilaton-studio.pages.dev`!
-   - You can also bind your custom domain (e.g. `dilaton.yourdomain.com`) in the Cloudflare Pages Custom Domains tab with 1-click automatic HTTPS.
+4. Click **Save and Deploy**. Your site will be live at `https://dilaton-studio.pages.dev` with free SSL and custom domain support.
 
 ---
 
