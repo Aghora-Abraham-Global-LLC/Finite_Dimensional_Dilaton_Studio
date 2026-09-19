@@ -37,12 +37,12 @@ jobs:
         run: npm ci || npm install
 
       - name: Build production bundle
-        run: npm run build
+        run: |
+          npm run build
+          touch dist/.nojekyll
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload dist artifact
         uses: actions/upload-pages-artifact@v3
